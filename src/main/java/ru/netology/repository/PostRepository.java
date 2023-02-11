@@ -12,7 +12,6 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Repository
 public class PostRepository {
     public final AtomicLong postID = new AtomicLong(0);
     private final ConcurrentMap<Long, Post> postsMap = new ConcurrentHashMap<>();
